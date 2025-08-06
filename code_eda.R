@@ -844,7 +844,7 @@ parent_pidlink3 <- bk_ar13 %>%
     by = c("hhid00", "ar11")
   )
 
-# Generate observations_w5 and rename variables
+# Generate observations_w3 and rename variables
 observations_w3 <- parent_pidlink3 %>% 
   select(
     hhid = hhid00, pid = pid00, pidlink, father_pidlink, mother_pidlink,
@@ -933,7 +933,7 @@ parent_pidlink4 <- bk_ar14 %>%
     by = c("hhid07", "ar11")
   )
 
-# Generate observations_w5 and rename variables
+# Generate observations_w4 and rename variables
 observations_w4 <- parent_pidlink4 %>% 
   select(
     hhid = hhid07, pid = pid07, pidlink, father_pidlink, mother_pidlink,
@@ -2535,3 +2535,4 @@ do.data$has_diff_inc <- NULL
 write.xlsx(do.data, "stability.data.update.xlsx", rowNames = FALSE)
 
 #### End ####
+
